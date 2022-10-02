@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Favicon code from realfavicongenerator.net -->
+<link rel="apple-touch-icon" type="image/png" sizes="16x16" href="/assets/img/icons/robot.png"> 
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/robot.png"> 
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8b51a3">
+<meta name="msapplication-TileColor" content="#563d7c">
+<meta name="theme-color" content="#ffffff">
+
+  <!--jQuery-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>ReDSDF - Regularized Deep Signed Distance Fields for Reactive Motion Generation | Puze Liu - 刘普泽</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="ReDSDF - Regularized Deep Signed Distance Fields for Reactive Motion Generation" />
+<meta name="author" content="Puze Liu" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description" content="Code | Paper | Presentation" />
+<meta property="og:description" content="Code | Paper | Presentation" />
+<link rel="canonical" href="http://localhost:4000/2022/09/29/redsdf.html" />
+<meta property="og:url" content="http://localhost:4000/2022/09/29/redsdf.html" />
+<meta property="og:site_name" content="Puze Liu - 刘普泽" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-29T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="ReDSDF - Regularized Deep Signed Distance Fields for Reactive Motion Generation" />
+<meta name="twitter:site" content="@liu_puze" />
+<meta name="twitter:creator" content="@Puze Liu" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Puze Liu"},"dateModified":"2022-09-29T00:00:00+02:00","datePublished":"2022-09-29T00:00:00+02:00","description":"Code | Paper | Presentation","headline":"ReDSDF - Regularized Deep Signed Distance Fields for Reactive Motion Generation","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022/09/29/redsdf.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/head.png"},"name":"Puze Liu"},"url":"http://localhost:4000/2022/09/29/redsdf.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    
+
+<section id="header-nav">
+  <header>
+    <nav class="navbar navbar-expand-md bg-light" style="background-color: #ffffff;">
+      <div class="container-fluid mt-3">
+      <!-- <image class="icon" src="/assets/img/icons/robot.png"></image> -->
+      <a class="navbar-brand my-auto me-5" href="/"><image class="icon" src="/assets/img/icons/robot-mono.png"></image></a>
+      <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse mb-0 pb-3" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          
+          <!-- others -->
+          <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
+            <a class="nav-link" href="/">
+              <span data-hover="Home">Home</span>
+            </a>
+          </li>
+          
+          <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
+            <a class="nav-link" href="/publications.html">
+              <span data-hover="Publications">Publications</span>
+            </a>
+          </li>
+          
+          
+          <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
+            <a class="nav-link" href="/presentations.html">
+              <span data-hover="Presentations">Presentations</span>
+            </a>
+          </li>
+          
+          
+          <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
+            <a class="nav-link" href="/blog">
+              <span data-hover="Blog">Blog</span>
+            </a>
+          </li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    </nav>
+  </header>
+</section>
+<div id="post">
+  <section class="post-header">
+    <h1 class="title">ReDSDF - Regularized Deep Signed Distance Fields for Reactive Motion Generation</h1>
+    <p class="subtitle"></p>
+    <p class="meta">
+      September 29, 2022
+    </p>
+  </section>
+  <section class="post-content">
+    <p> <a href="https://git.ias.informatik.tu-darmstadt.de/ias_code/iros2022/redsdf">Code</a> | <a href="https://arxiv.org/pdf/2203.04739.pdf">Paper</a> | <a href="https://www.youtube.com/watch?v=ixxQLLDZjjw&amp;feature=youtu.be">Presentation</a> </p>
+
+<h3 id="abstract">Abstract</h3>
+<p>Autonomous robots should operate in real-world dynamic environments and collaborate with humans in tight spaces. A key component for allowing robots to leave structured lab and manufacturing settings is their ability to evaluate online and real-time collisions with the world around them. Distance-based constraints are fundamental for enabling robots to plan their actions and act safely, protecting both humans and their hardware. However, different applications require different distance resolutions, leading to various heuristic approaches for measuring distance fields w.r.t. obstacles, which are computationally expensive and hinder their application in dynamic obstacle avoidance use-cases. We propose Regularized Deep Signed Distance Fields (ReDSDF), a single neural implicit function that can compute smooth distance fields at any scale, with fine-grained resolution over high-dimensional manifolds and articulated bodies like humans, thanks to our effective data generation and a simple inductive bias during training. We demonstrate the effectiveness of our approach in representative simulated tasks for whole-body control (WBC) and safe HumanRobot Interaction (HRI) in shared workspaces. Finally, we provide proof of concept of a real-world application in a HRI handover task with a mobile manipulator robot.</p>
+
+<p>Check our  for more details.</p>
+
+  </section>
+</div>
+
+<div id="top" class="top-btn" onclick="moveTop()">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<script>
+  var lastScrollTop = 0;
+  window.onscroll = function () {
+    var st = document.body.scrollTop || document.documentElement.scrollTop;
+    if (st > 250) {
+      document.getElementById("top").style.display = "block"
+      if (st > lastScrollTop) {
+        document.getElementById("top").style.opacity = 0
+      } else {
+        document.getElementById("top").style.opacity = 1
+      }
+    } else {
+      document.getElementById("top").style.opacity = 0
+      if (st > lastScrollTop) {
+        document.getElementById("top").style.display = "none"
+      }
+    }
+    lastScrollTop = st <= 0 ? 0 : st;
+  }
+  function moveTop() {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }
+</script>
+
+<!-- Footer -->
+<footer>
+  <div class="footer">
+    Copyright © 2022
+    <a href="">Puze Liu</a>.
+    Powered by Jekyll.
+  </div>
+</footer>
+
+
+<script type="text/javascript" src="/assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/Headroom.js"></script>
+<script type="text/javascript" src="/assets/js/jQuery.headroom.js"></script>
+<script type="text/javascript" src="/assets/js/custom.js"></script>
+
+
+<script>
+    var divs = document.querySelectorAll("div.project-content");
+    $('div.project-content').each(function (index) { 
+        var filename = $(this).text();
+        filename = filename.replace(/\s/g, '');
+        filename = filename.replace("/_posts/", "");
+        filename = filename.replace(".md", ".html");
+        filename = filename.substring(0, 4) + "/" + filename.substring(5);
+        filename = filename.substring(0, 7) + "/" + filename.substring(8);
+        filename = filename.substring(0, 10) + "/" + filename.substring(11);
+
+        console.log(filename);
+        $.ajax({ url: filename, dataType: "html", success: function(data) { 
+            const node = new DOMParser().parseFromString(data, "text/html");
+            divs[index].innerHTML = node.getElementById("post").getElementsByClassName("post-content")[0].innerHTML;
+            } 
+        })
+    });
+
+</script>
+  </div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.js" integrity="sha384-Qsn9KnoKISj6dI8g7p1HBlNpVx0I8p1SvlwOldgi3IorMle61nQy4zEahWYtljaz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+    });
+</script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyB7md8A_0alXIvUwSlpHGW8F-i59SboSqE",
+        authDomain: "puze-liu.firebaseapp.com",
+        projectId: "puze-liu",
+        storageBucket: "puze-liu.appspot.com",
+        messagingSenderId: "895154462267",
+        appId: "1:895154462267:web:b6265ec90951a8bc62061e",
+        measurementId: "G-97L9JYTYVW"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+</body>
+
+</html>
