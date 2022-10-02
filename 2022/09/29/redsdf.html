@@ -29,24 +29,24 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>ReDSDF - Regularized Deep Signed Distance Fields for Reactive Motion Generation | Puze Liu - 刘普泽</title>
+<title>ReDSDF: Regularized Deep Signed Distance Fields for Reactive Motion Generation | Puze Liu - 刘普泽</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="ReDSDF - Regularized Deep Signed Distance Fields for Reactive Motion Generation" />
+<meta property="og:title" content="ReDSDF: Regularized Deep Signed Distance Fields for Reactive Motion Generation" />
 <meta name="author" content="Puze Liu" />
 <meta property="og:locale" content="en_GB" />
-<meta name="description" content="Code | Paper | Presentation" />
-<meta property="og:description" content="Code | Paper | Presentation" />
+<meta name="description" content="The homepage of Puze Liu (刘普泽)" />
+<meta property="og:description" content="The homepage of Puze Liu (刘普泽)" />
 <link rel="canonical" href="http://localhost:4000/2022/09/29/redsdf.html" />
 <meta property="og:url" content="http://localhost:4000/2022/09/29/redsdf.html" />
 <meta property="og:site_name" content="Puze Liu - 刘普泽" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-09-29T00:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="ReDSDF - Regularized Deep Signed Distance Fields for Reactive Motion Generation" />
+<meta property="twitter:title" content="ReDSDF: Regularized Deep Signed Distance Fields for Reactive Motion Generation" />
 <meta name="twitter:site" content="@liu_puze" />
 <meta name="twitter:creator" content="@Puze Liu" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Puze Liu"},"dateModified":"2022-09-29T00:00:00+02:00","datePublished":"2022-09-29T00:00:00+02:00","description":"Code | Paper | Presentation","headline":"ReDSDF - Regularized Deep Signed Distance Fields for Reactive Motion Generation","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022/09/29/redsdf.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/head.png"},"name":"Puze Liu"},"url":"http://localhost:4000/2022/09/29/redsdf.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Puze Liu"},"dateModified":"2022-09-29T00:00:00+02:00","datePublished":"2022-09-29T00:00:00+02:00","description":"The homepage of Puze Liu (刘普泽)","headline":"ReDSDF: Regularized Deep Signed Distance Fields for Reactive Motion Generation","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022/09/29/redsdf.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/head.png"},"name":"Puze Liu"},"url":"http://localhost:4000/2022/09/29/redsdf.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -104,19 +104,23 @@
 </section>
 <div id="post">
   <section class="post-header">
-    <h1 class="title">ReDSDF - Regularized Deep Signed Distance Fields for Reactive Motion Generation</h1>
+    <h1 class="title">ReDSDF: Regularized Deep Signed Distance Fields for Reactive Motion Generation</h1>
     <p class="subtitle"></p>
     <p class="meta">
       September 29, 2022
     </p>
   </section>
   <section class="post-content">
-    <p> <a href="https://git.ias.informatik.tu-darmstadt.de/ias_code/iros2022/redsdf">Code</a> | <a href="https://arxiv.org/pdf/2203.04739.pdf">Paper</a> | <a href="https://www.youtube.com/watch?v=ixxQLLDZjjw&amp;feature=youtu.be">Presentation</a> </p>
+    <div class="row">
+<div class="mx-auto col-md-4"><img src="/assets/img/human_sdf.gif" style="max-height: 400px; max-width:300px" loading="lazy" alt="SDF of Tiago and Human" /></div>
+<div class="mx-auto col-md-4"><img src="/assets/img/tiago_sdf.gif" style="max-height: 400px; max-width:300px" loading="lazy" alt="SDF of Tiago and Human" /></div>
+</div>
+
+<p> <a href="https://git.ias.informatik.tu-darmstadt.de/ias_code/iros2022/redsdf">Code</a> | <a href="https://arxiv.org/pdf/2203.04739.pdf">Paper</a> | <a href="https://www.youtube.com/watch?v=ixxQLLDZjjw&amp;feature=youtu.be">Presentation</a> </p>
 
 <h3 id="abstract">Abstract</h3>
 <p>Autonomous robots should operate in real-world dynamic environments and collaborate with humans in tight spaces. A key component for allowing robots to leave structured lab and manufacturing settings is their ability to evaluate online and real-time collisions with the world around them. Distance-based constraints are fundamental for enabling robots to plan their actions and act safely, protecting both humans and their hardware. However, different applications require different distance resolutions, leading to various heuristic approaches for measuring distance fields w.r.t. obstacles, which are computationally expensive and hinder their application in dynamic obstacle avoidance use-cases. We propose Regularized Deep Signed Distance Fields (ReDSDF), a single neural implicit function that can compute smooth distance fields at any scale, with fine-grained resolution over high-dimensional manifolds and articulated bodies like humans, thanks to our effective data generation and a simple inductive bias during training. We demonstrate the effectiveness of our approach in representative simulated tasks for whole-body control (WBC) and safe HumanRobot Interaction (HRI) in shared workspaces. Finally, we provide proof of concept of a real-world application in a HRI handover task with a mobile manipulator robot.</p>
 
-<p>Check our  for more details.</p>
 
   </section>
 </div>
