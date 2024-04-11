@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Favicon code from realfavicongenerator.net -->
+<link rel="apple-touch-icon" type="image/png" sizes="16x16" href="/assets/img/icons/robot.png"> 
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/robot.png"> 
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8b51a3">
+<meta name="msapplication-TileColor" content="#563d7c">
+<meta name="theme-color" content="#ffffff">
+
+  <!--jQuery-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>ATACOM: Acting on the Tangent Space of the Constraint Manifold | Puze Liu - 刘普泽</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="ATACOM: Acting on the Tangent Space of the Constraint Manifold" />
+<meta name="author" content="Puze Liu" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description" content="The homepage of Puze Liu (刘普泽)" />
+<meta property="og:description" content="The homepage of Puze Liu (刘普泽)" />
+<link rel="canonical" href="http://localhost:4000/corl-ATACOM" />
+<meta property="og:url" content="http://localhost:4000/corl-ATACOM" />
+<meta property="og:site_name" content="Puze Liu - 刘普泽" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-28T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="ATACOM: Acting on the Tangent Space of the Constraint Manifold" />
+<meta name="twitter:site" content="@liu_puze" />
+<meta name="twitter:creator" content="@Puze Liu" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Puze Liu"},"dateModified":"2022-09-28T00:00:00+02:00","datePublished":"2022-09-28T00:00:00+02:00","description":"The homepage of Puze Liu (刘普泽)","headline":"ATACOM: Acting on the Tangent Space of the Constraint Manifold","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/corl-ATACOM"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/head.png"},"name":"Puze Liu"},"url":"http://localhost:4000/corl-ATACOM"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    
+
+<section id="header-nav">
+  <header>
+    <nav class="navbar navbar-expand-md bg-light" style="background-color: #ffffff;">
+      <div class="container-fluid mt-3">
+      <!-- <image class="icon" src="/assets/img/icons/robot.png"></image> -->
+      <a class="navbar-brand my-auto me-5" href="/"><image class="icon" src="/assets/img/icons/robot-mono.png"></image></a>
+      <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse mb-0 pb-3" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          
+          <!-- others -->
+          <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
+            <a class="nav-link" href="/">
+              <span data-hover="Home">Home</span>
+            </a>
+          </li>
+          
+          <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
+            <a class="nav-link" href="/publications.html">
+              <span data-hover="Publications">Publications</span>
+            </a>
+          </li>
+          
+          
+          <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
+            <a class="nav-link" href="/presentations.html">
+              <span data-hover="Presentations">Presentations</span>
+            </a>
+          </li>
+          
+          
+          <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
+            <a class="nav-link" href="/blog">
+              <span data-hover="Blog">Blog</span>
+            </a>
+          </li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    </nav>
+  </header>
+</section>
+<div id="post">
+  <section class="post-header">
+    <h1 class="title">ATACOM: Acting on the Tangent Space of the Constraint Manifold</h1>
+    <p class="subtitle"></p>
+    <!-- <p class="meta">
+      September 28, 2022
+    </p> -->
+  </section>
+  <section class="post-content">
+    <p><img src="/assets/img/manifold.gif" alt="sample image" class="width-60" /></p>
+
+<p> <a href="https://github.com/PuzeLiu/rl_on_manifold">Code</a> | <a href="https://proceedings.mlr.press/v164/liu22c/liu22c.pdf">Paper</a> | <a href="https://www.youtube.com/watch?v=1Ve4wig7Oi4">Presentation</a> </p>
+
+<p>One of the biggest problems of deploying a reinforcement learning agent on a real robot platform is <strong>safety</strong>.
+One common formulation for safe reinforcement learning is <em>CMDP</em>, i.e., the accumulative discounted cost is smaller than a threshold $D$.</p>
+
+\[\begin{align*}
+\max \quad &amp;\sum_{t=0}^{T}\gamma^t r(s_t, a_t)\\
+\mathrm{s.t.} \quad &amp;\sum_{t=0}^{T}\gamma^t c(s_t, a_t) &lt; D
+\end{align*}\]
+
+<p>This problem focus on learning the final safe policy. However, this formulation is generally not applicable for safe-critical environment, such as, autonomous driving. There are several limitations in this formulation:</p>
+<ol>
+  <li>It’s hard to deal with multiple constraints.</li>
+  <li>For problems with big <em>sim-to-real</em> gap, deploying the final policy learned from simulation does not ensure safety.</li>
+  <li>Cumulative constraints may not reflect the safety when $c$ is not strictly positive or negative.</li>
+  <li>Safety is not guaranteed during the training process.</li>
+</ol>
+
+<h2 id="safe-exploration">Safe Exploration</h2>
+<p>Instead, we consider the <strong>safe exploration</strong> problem as</p>
+
+\[\begin{align*}
+\max \quad &amp;\sum_{t=0}^{T}\gamma^t r(s_t, a_t)\\
+\mathrm{s.t.} \quad &amp; c_i(s_t) \leq 0, \\
+&amp;\forall i\in [1,\cdots,N], t\in [0, \cdots, T]
+\end{align*}\]
+
+<p>This formulation ensures constraints satisfaction for multiple constraints $c_i$ at each individual step $t$.</p>
+
+<p>To solve this problem, our idea is to construct a constraint manifold $\mathcal{M}= \{s: \bm{c}(s)=0\}$. The agent takes action which ensures the state on the manifold. In such way, we ensure the safety.</p>
+
+<h3 id="sphere-manifold">Sphere Manifold</h3>
+<p>Starting from a simple example, we can think about a unit sphere as a manifold embedded in 2D space: $\mathcal{M}_s=\{(x, y): x^2 + y^2 -1 = 0 \}$. For a point $p=(x_p, y_p)$ that stays on the manifold. We can compute its tangent vector. If we move the point along the tangent vector with an infinitesimal step. We ensure the point always stays on the sphere manifold.</p>
+
+<p>Mathmatically, we can compute the derivate of the sphere function</p>
+
+\[J_s =  \begin{bmatrix} 2x \\ 2y\end{bmatrix}\]
+
+<p>This vector is along the normal direction of the sphere, pointing outwards. The tangent vector (space) $N_s$ is perpendicular to vector $J_s$, i.e., <a href="https://en.wikipedia.org/wiki/Kernel_(linear_algebra)">null space</a>. We can compute the null space via several numerical approaches, such as SVD and QR decomposition. The null space is</p>
+
+<p>\(N_s = \text{Null}(J_s) = \begin{bmatrix}x \\ -y\end{bmatrix}\)
+Note that the tangent space is normalized. We can determine the state velocity to be aligned with the tangent vector</p>
+
+\[\begin{bmatrix} \dot{x} \\ \dot{y} \end{bmatrix} = N_s \alpha,\]
+
+<p>the state will move on the sphere manifold and $\alpha$ can be chosen arbitrarily.</p>
+
+<p>If we consider the $\alpha$ as the action, all of the actions taken by the RL agent are safe.</p>
+
+<h3 id="inequality-constraints">Inequality Constraints</h3>
+<p>For most cases, the constraints are inequality constraints $\bm{c}(\bm{q})\leq \bm{0}, \bm{c}:\mathbb{R}^N\rightarrow \mathbb{R}^M$. We can construct the constraint manifold by introducing slack variables $\mu \in \mathbb{R}^M$.</p>
+
+\[\bar{\bm{c}}(\bm{q}, \bm{\mu}) = \bm{c}(\bm{q}) + \frac{1}{2}\bm{\mu}^2=0\]
+
+<p>In this way, we augment the original state space, the constraint manifold is embedded in $\mathbb{R}^{N+M}$. We can compute the Jacobian as</p>
+
+\[\bm{J}_c = \begin{bmatrix} \bm{J} \quad \text{diag}(\bm{\mu})\end{bmatrix}\]
+
+<p>and compute the null space as $\bm{N}_c = \text{Null}(\bm{J_c})$.
+Using this null space we can determine the safe action with any type of RL method.</p>
+
+<p>Further details of the approach can be found in the <a href="https://proceedings.mlr.press/v164/liu22c.html">paper</a>.</p>
+
+<p><br /></p>
+
+<p><sub>[1] Puze Liu, Davide Tateo, Haitham Bou-Ammar, and Jan Peters, Robot Reinforcement Learning on the Constraint Manifold, In Proceedings of the 5th Conference on Robot Learning, vol. 164, pp. 1357–1366, 2022 </sub></p>
+
+<p><br /></p>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">CORL_2021_Learning_on_the_Manifold</span><span class="p">,</span>
+  <span class="na">title</span>     <span class="p">=</span> <span class="s">{Robot Reinforcement Learning on the Constraint Manifold}</span><span class="p">,</span>
+  <span class="na">author</span>    <span class="p">=</span> <span class="s">{Liu, Puze and Tateo, Davide and Bou-Ammar, Haitham and Peters, Jan}</span><span class="p">,</span>
+  <span class="na">booktitle</span>   <span class="p">=</span> <span class="s">{Proceedings of the 5th Conference on Robot Learning}</span><span class="p">,</span>
+  <span class="na">pages</span>       <span class="p">=</span> <span class="s">{1357--1366}</span><span class="p">,</span>
+  <span class="na">year</span>        <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">editor</span>      <span class="p">=</span> <span class="s">{Faust, Aleksandra and Hsu, David and Neumann, Gerhard}</span><span class="p">,</span>
+  <span class="na">volume</span>      <span class="p">=</span> <span class="s">{164}</span><span class="p">,</span>
+  <span class="na">series</span>      <span class="p">=</span> <span class="s">{Proceedings of Machine Learning Research}</span><span class="p">,</span>
+  <span class="na">publisher</span>   <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+  </section>
+</div>
+
+<div id="top" class="top-btn" onclick="moveTop()">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<script>
+  var lastScrollTop = 0;
+  window.onscroll = function () {
+    var st = document.body.scrollTop || document.documentElement.scrollTop;
+    if (st > 250) {
+      document.getElementById("top").style.display = "block"
+      if (st > lastScrollTop) {
+        document.getElementById("top").style.opacity = 0
+      } else {
+        document.getElementById("top").style.opacity = 1
+      }
+    } else {
+      document.getElementById("top").style.opacity = 0
+      if (st > lastScrollTop) {
+        document.getElementById("top").style.display = "none"
+      }
+    }
+    lastScrollTop = st <= 0 ? 0 : st;
+  }
+  function moveTop() {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }
+</script>
+
+<!-- Footer -->
+<footer>
+  <div class="footer">
+    Copyright © 2022
+    <a href="">Puze Liu</a>.
+    Powered by Jekyll.
+  </div>
+</footer>
+
+
+<script type="text/javascript" src="/assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/Headroom.js"></script>
+<script type="text/javascript" src="/assets/js/jQuery.headroom.js"></script>
+<script type="text/javascript" src="/assets/js/custom.js"></script>
+
+
+<script>
+    var divs = document.querySelectorAll("div.project-content");
+    $('div.project-content').each(function (index) { 
+        var filename = $(this).text();
+        filename = filename.replace(/\s/g, '');
+        filename = filename.replace("/_posts/", "");
+        filename = filename.replace(".md", ".html");
+        filename = filename.substring(0, 4) + "/" + filename.substring(5);
+        filename = filename.substring(0, 7) + "/" + filename.substring(8);
+        filename = filename.substring(0, 10) + "/" + filename.substring(11);
+
+        console.log(filename);
+        $.ajax({ url: filename, dataType: "html", success: function(data) { 
+            const node = new DOMParser().parseFromString(data, "text/html");
+            divs[index].innerHTML = node.getElementById("post").getElementsByClassName("post-content")[0].innerHTML;
+            } 
+        })
+    });
+
+</script>
+  </div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.js" integrity="sha384-Qsn9KnoKISj6dI8g7p1HBlNpVx0I8p1SvlwOldgi3IorMle61nQy4zEahWYtljaz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+    });
+</script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyB7md8A_0alXIvUwSlpHGW8F-i59SboSqE",
+        authDomain: "puze-liu.firebaseapp.com",
+        projectId: "puze-liu",
+        storageBucket: "puze-liu.appspot.com",
+        messagingSenderId: "895154462267",
+        appId: "1:895154462267:web:b6265ec90951a8bc62061e",
+        measurementId: "G-97L9JYTYVW"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RNQHE0TJJL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RNQHE0TJJL');
+</script>
+</body>
+
+</html>
