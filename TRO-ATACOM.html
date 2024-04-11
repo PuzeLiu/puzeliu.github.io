@@ -33,8 +33,8 @@
 <meta property="og:title" content="Safe Reinforcement Learning on the Constraint Manifold: Theory and Applications" />
 <meta name="author" content="Puze Liu" />
 <meta property="og:locale" content="en_GB" />
-<meta name="description" content="Overview of the Real Robot Air Hockey Experiments" />
-<meta property="og:description" content="Overview of the Real Robot Air Hockey Experiments" />
+<meta name="description" content="Real Robot Air Hockey" />
+<meta property="og:description" content="Real Robot Air Hockey" />
 <link rel="canonical" href="http://localhost:4000/TRO-ATACOM" />
 <meta property="og:url" content="http://localhost:4000/TRO-ATACOM" />
 <meta property="og:site_name" content="Puze Liu - 刘普泽" />
@@ -45,7 +45,7 @@
 <meta name="twitter:site" content="@liu_puze" />
 <meta name="twitter:creator" content="@Puze Liu" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Puze Liu"},"dateModified":"2024-04-11T00:00:00+02:00","datePublished":"2024-04-11T00:00:00+02:00","description":"Overview of the Real Robot Air Hockey Experiments","headline":"Safe Reinforcement Learning on the Constraint Manifold: Theory and Applications","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/TRO-ATACOM"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/head.png"},"name":"Puze Liu"},"url":"http://localhost:4000/TRO-ATACOM"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Puze Liu"},"dateModified":"2024-04-11T00:00:00+02:00","datePublished":"2024-04-11T00:00:00+02:00","description":"Real Robot Air Hockey","headline":"Safe Reinforcement Learning on the Constraint Manifold: Theory and Applications","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/TRO-ATACOM"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/head.png"},"name":"Puze Liu"},"url":"http://localhost:4000/TRO-ATACOM"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -110,51 +110,99 @@
     </p> -->
   </section>
   <section class="post-content">
-    <h3 id="overview-of-the-real-robot-air-hockey-experiments">Overview of the Real Robot Air Hockey Experiments</h3>
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/h5ZkVZLJ8fw">
+    <h2 id="real-robot-air-hockey">Real Robot Air Hockey</h2>
+
+<h3 id="overview">Overview</h3>
+<div class="row d-block w-100">
+<iframe allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/h5ZkVZLJ8fw" style="display: block; margin: auto; width: 480px; height: 360px">
 </iframe>
+</div>
+<hr />
 
-<h3 id="whole-training-process">Whole Training Process</h3>
+<h4 id="evaluations">Evaluations</h4>
 
-<p>coming soon!</p>
-
-<h4 id="pretraining">Pretraining</h4>
-<!-- <iframe width="24%" height="120"
-    src="https://www.youtube.com/embed/h5ZkVZLJ8fw">
-</iframe> -->
-
-<h4 id="episode-100---1000">Episode 100 - 1000</h4>
-
-<!-- <div class="row text-center ">
-    <div class="col-md-3 px-1">
-        <iframe width="100%" height="110"
-            src="https://www.youtube.com/embed/h5ZkVZLJ8fw">
+<div class="row text-center ">
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/zQbZ8QklNx8">
         </iframe>
-        <p>Epi. 100</p>
+        <p>Baseline Agent</p>
     </div>
-    <div class="col-md-3 px-1">
-        <iframe width="100%" height="110"
-            src="https://www.youtube.com/embed/h5ZkVZLJ8fw">
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/WXXc-Osb9Tk">
         </iframe>
-        <p>Epi. 200</p>
+        <p>Initial Policy</p>
     </div>
-    <div class="col-md-3 px-1">
-        <iframe width="100%" height="110"
-            src="https://www.youtube.com/embed/h5ZkVZLJ8fw">
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/ZuyRgEos4ZY">
         </iframe>
-        <p>Epi. 300</p>
+        <p>Final Policy</p>
     </div>
-    <div class="col-md-3 px-1">
-        <iframe width="100%" height="110"
-            src="https://www.youtube.com/embed/h5ZkVZLJ8fw">
+    <hr />
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/TOiwCt-3yEc">
         </iframe>
-        <p>Epi. 400</p>
+        <p>Evaluation 500</p>
     </div>
-</div> -->
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/k2tJOftPtdY">
+        </iframe>
+        <p>Evaluation 1000</p>
+    </div>
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/abzlUnH6-c0">
+        </iframe>
+        <p>Evaluation 1500</p>
+    </div>
+    <hr />
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/KXsf0OSz9Dk">
+        </iframe>
+        <p>Evaluation 2000</p>
+    </div>
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/Z_h8Kwym4OU">
+        </iframe>
+        <p>Evaluation 2500</p>
+    </div>
+    <hr />
+</div>
 
-<h4 id="episode-1000---2000">Episode 1000 - 2000</h4>
+<h4 id="training-episode">Training Episode</h4>
 
-<h4 id="episode-2000---3000">Episode 2000 - 3000</h4>
+<div class="row text-center ">
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/uCjYwb7JuIg">
+        </iframe>
+        <p>101 - 500</p>
+    </div>
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/VMs-8MFGQ-o">
+        </iframe>
+        <p>501 - 1000</p>
+    </div>
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/z8eQaub_3ww">
+        </iframe>
+        <p>1001 - 1500</p>
+    </div>
+    <hr />
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/VhLcFMpx9hs">
+        </iframe>
+        <p>1501 - 2000</p>
+    </div>
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/xpisjtEdwds">
+        </iframe>
+        <p>2001 - 2500</p>
+    </div>
+    <div class="col-md-4 px-1">
+        <iframe width="100%" height="150px" allowfullscreen="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/SvSC_EjUJBk">
+        </iframe>
+        <p>2501 - 3000</p>
+    </div>
+    <hr />
+</div>
 
 
   </section>
