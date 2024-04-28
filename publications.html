@@ -70,7 +70,9 @@
               <span data-hover="Home">Home</span>
             </a>
           </li>
-          <li class="nav-item my-auto mx-auto pe-3 text-center current"><a class="nav-link active" aria-current="page" href="">Publications</a></li>
+          <li class="nav-item my-auto mx-auto pe-3 text-center current">
+            <a class="nav-link active" aria-current="page" href="">Publications</a>
+          </li>
           
           <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
             <a class="nav-link" href="/presentations.html">
@@ -104,6 +106,36 @@
   <h2 class="bibliography">Journal Articles</h2>
 <h3 class="bibliography">2024</h3>
 <ol class="bibliography"><li><!-- Entry bib key -->
+<div id="safe reinforcement learning, constraint manifold, safe exploration">
+  
+  <!-- Title -->
+  <div class="title">Safe Reinforcement Learning on the Constraint Manifold: Theory and Applications
+    <!-- Additional Comments --></div>  
+  <!-- Author -->
+  <div class="author">
+            <em>P. Liu</em>,&nbsp;Bou-Ammar H.,&nbsp;J. Peters,&nbsp;and Tateo D.
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+  <div class="third-line">
+    Submitted to the IEEE Transactions on Robotics (T-RO), 2024
+  </div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      [<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>]
+      [<a href="http://arxiv.org/abs/2404.09080" class="btn btn-sm z-depth-0" role="button">arXiv</a>]
+      [<a href="https://www.ias.informatik.tu-darmstadt.de/uploads/Team/PuzeLiu/TRO_ATACOM_submitted.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>]
+      [<a href="https://puzeliu.github.io/TRO-ATACOM" class="btn btn-sm z-depth-0" role="button">URL</a>]
+  </div>
+
+  <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Integrating learning-based techniques, especially reinforcement learning, into robotics is promising for solving complex problems in unstructured environments. However, most existing approaches are trained in well-tuned simulators and subsequently deployed on real robots without online fine-tuning. In this setting, the simulation’s realism seriously impacts the deployment’s success rate. Instead, learning with real-world interaction data offers a promising alternative: not only eliminates the need for a fine-tuned simulator but also applies to a broader range of tasks where accurate modeling is unfeasible. One major problem for on-robot reinforcement learning is ensuring safety, as uncontrolled exploration can cause catastrophic damage to the robot or the environment. Indeed, safety specifications, often represented as constraints, can be complex and non-linear, making safety challenging to guarantee in learning systems. In this paper, we show how we can impose complex safety constraints on learning-based robotics systems in a principled manner, both from theoretical and practical points of view. Our approach is based on the concept of the Constraint Manifold, representing the set of safe robot configurations. Exploiting differential geometry techniques, i.e., the tangent space, we can construct a safe action space, allowing learning agents to sample arbitrary actions while ensuring safety. We demonstrate the method’s effectiveness in a real-world Robot Air Hockey task, showing that our method can handle high-dimensional tasks with complex constraints. Videos of the real robot experiments are available on the project website.</p>
+    </div>
+</div></li>
+<li><!-- Entry bib key -->
 <div id="10292912">
   
   <!-- Title -->
@@ -117,15 +149,20 @@
   <!-- Journal/Book title and date -->
   
   <div class="third-line">
-    IEEE Transactions on Robotics, vol. 40, pp. 277-297, 2024
+    IEEE Transactions on Robotics (T-RO), vol. 40, pp. 277-297, 2024
   </div>
 
   <!-- Links/Buttons -->
   <div class="links">
+      [<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>]
+      [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10292912" class="btn btn-sm z-depth-0" role="button">PDF</a>]
       [<a href="http://doi.org/10.1109/TRO.2023.3326922" class="btn btn-sm z-depth-0" role="button">DOI</a>]
   </div>
 
-  
+  <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Motion planning is a mature area of research in robotics with many well-established methods based on optimization or sampling the state space, suitable for solving kinematic motion planning. However, when dynamic motions under constraints are needed and computation time is limited, fast kinodynamic planning on the constraint manifold is indispensable. In recent years, learning-based solutions have become alternatives to classical approaches, but they still lack comprehensive handling of complex constraints, such as planning on a lower dimensional manifold of the task space while considering the robot’s dynamics. This article introduces a novel learning-to-plan framework that exploits the concept of constraint manifold, including dynamics, and neural planning methods. Our approach generates plans satisfying an arbitrary set of constraints and computes them in a short constant time, namely the inference time of a neural network. This allows the robot to plan and replan reactively, making our approach suitable for dynamic environments. We validate our approach on two simulated tasks and in a demanding real-world scenario, where we use a Kuka LBR Iiwa 14 robotic arm to perform the hitting movement in robotic air hockey.</p>
+    </div>
 </div></li></ol>
 <h3 class="bibliography">2023</h3>
 <ol class="bibliography"><li><!-- Entry bib key -->
@@ -148,6 +185,7 @@
   <!-- Links/Buttons -->
   <div class="links">
       [<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>]
+      [<a href="https://www.ias.informatik.tu-darmstadt.de/uploads/Team/JulenUrainDeJesus/cep_ijrr_2023.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>]
       [<a href="https://doi.org/10.1177/02783649231179499" class="btn btn-sm z-depth-0" role="button">URL</a>]
       [<a href="http://doi.org/10.1177/02783649231179499" class="btn btn-sm z-depth-0" role="button">DOI</a>]
   </div>
