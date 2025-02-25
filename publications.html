@@ -29,7 +29,7 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Publications | Puze Liu - 刘普泽</title>
-<meta name="generator" content="Jekyll v4.2.2" />
+<meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Publications" />
 <meta name="author" content="Puze Liu" />
 <meta property="og:locale" content="en_GB" />
@@ -106,6 +106,35 @@
   <h2 class="bibliography">Journal Articles</h2>
 <h3 class="bibliography">2024</h3>
 <ol class="bibliography"><li><!-- Entry bib key -->
+<div id="10292912">
+  
+  <!-- Title -->
+  <div class="title">Fast Kinodynamic Planning on the Constraint Manifold With Deep Neural Networks
+    <!-- Additional Comments --></div>  
+  <!-- Author -->
+  <div class="author">Piotr Kicki,&nbsp;
+            <em>Puze Liu</em>,&nbsp;Davide Tateo,&nbsp;Haitham Bou-Ammar,&nbsp;Krzysztof Walas,&nbsp;Piotr Skrzypczyński,&nbsp;and Jan Peters
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+  <div class="third-line">
+    IEEE Transactions on Robotics (T-RO), vol. 40, pp. 277-297, 2024
+  </div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      [<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>]
+      [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10292912" class="btn btn-sm z-depth-0" role="button">PDF</a>]
+      [<a href="http://doi.org/10.1109/TRO.2023.3326922" class="btn btn-sm z-depth-0" role="button">DOI</a>]
+  </div>
+
+  <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Motion planning is a mature area of research in robotics with many well-established methods based on optimization or sampling the state space, suitable for solving kinematic motion planning. However, when dynamic motions under constraints are needed and computation time is limited, fast kinodynamic planning on the constraint manifold is indispensable. In recent years, learning-based solutions have become alternatives to classical approaches, but they still lack comprehensive handling of complex constraints, such as planning on a lower dimensional manifold of the task space while considering the robot’s dynamics. This article introduces a novel learning-to-plan framework that exploits the concept of constraint manifold, including dynamics, and neural planning methods. Our approach generates plans satisfying an arbitrary set of constraints and computes them in a short constant time, namely the inference time of a neural network. This allows the robot to plan and replan reactively, making our approach suitable for dynamic environments. We validate our approach on two simulated tasks and in a demanding real-world scenario, where we use a Kuka LBR Iiwa 14 robotic arm to perform the hitting movement in robotic air hockey.</p>
+    </div>
+</div></li>
+<li><!-- Entry bib key -->
 <div id="safe reinforcement learning, constraint manifold, safe exploration">
   
   <!-- Title -->
@@ -133,35 +162,6 @@
   <!-- Hidden abstract block -->
     <div class="abstract hidden">
       <p>Integrating learning-based techniques, especially reinforcement learning, into robotics is promising for solving complex problems in unstructured environments. However, most existing approaches are trained in well-tuned simulators and subsequently deployed on real robots without online fine-tuning. In this setting, the simulation’s realism seriously impacts the deployment’s success rate. Instead, learning with real-world interaction data offers a promising alternative: not only eliminates the need for a fine-tuned simulator but also applies to a broader range of tasks where accurate modeling is unfeasible. One major problem for on-robot reinforcement learning is ensuring safety, as uncontrolled exploration can cause catastrophic damage to the robot or the environment. Indeed, safety specifications, often represented as constraints, can be complex and non-linear, making safety challenging to guarantee in learning systems. In this paper, we show how we can impose complex safety constraints on learning-based robotics systems in a principled manner, both from theoretical and practical points of view. Our approach is based on the concept of the Constraint Manifold, representing the set of safe robot configurations. Exploiting differential geometry techniques, i.e., the tangent space, we can construct a safe action space, allowing learning agents to sample arbitrary actions while ensuring safety. We demonstrate the method’s effectiveness in a real-world Robot Air Hockey task, showing that our method can handle high-dimensional tasks with complex constraints. Videos of the real robot experiments are available on the project website.</p>
-    </div>
-</div></li>
-<li><!-- Entry bib key -->
-<div id="10292912">
-  
-  <!-- Title -->
-  <div class="title">Fast Kinodynamic Planning on the Constraint Manifold With Deep Neural Networks
-    <!-- Additional Comments --></div>  
-  <!-- Author -->
-  <div class="author">Piotr Kicki,&nbsp;
-            <em>Puze Liu</em>,&nbsp;Davide Tateo,&nbsp;Haitham Bou-Ammar,&nbsp;Krzysztof Walas,&nbsp;Piotr Skrzypczyński,&nbsp;and Jan Peters
-  </div>
-
-  <!-- Journal/Book title and date -->
-  
-  <div class="third-line">
-    IEEE Transactions on Robotics (T-RO), vol. 40, pp. 277-297, 2024
-  </div>
-
-  <!-- Links/Buttons -->
-  <div class="links">
-      [<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>]
-      [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10292912" class="btn btn-sm z-depth-0" role="button">PDF</a>]
-      [<a href="http://doi.org/10.1109/TRO.2023.3326922" class="btn btn-sm z-depth-0" role="button">DOI</a>]
-  </div>
-
-  <!-- Hidden abstract block -->
-    <div class="abstract hidden">
-      <p>Motion planning is a mature area of research in robotics with many well-established methods based on optimization or sampling the state space, suitable for solving kinematic motion planning. However, when dynamic motions under constraints are needed and computation time is limited, fast kinodynamic planning on the constraint manifold is indispensable. In recent years, learning-based solutions have become alternatives to classical approaches, but they still lack comprehensive handling of complex constraints, such as planning on a lower dimensional manifold of the task space while considering the robot’s dynamics. This article introduces a novel learning-to-plan framework that exploits the concept of constraint manifold, including dynamics, and neural planning methods. Our approach generates plans satisfying an arbitrary set of constraints and computes them in a short constant time, namely the inference time of a neural network. This allows the robot to plan and replan reactively, making our approach suitable for dynamic environments. We validate our approach on two simulated tasks and in a demanding real-world scenario, where we use a Kuka LBR Iiwa 14 robotic arm to perform the hitting movement in robotic air hockey.</p>
     </div>
 </div></li></ol>
 <h3 class="bibliography">2023</h3>
