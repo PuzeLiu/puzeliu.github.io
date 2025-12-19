@@ -21,7 +21,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
   <!-- Fonts & Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css" integrity="sha256-4rTIfo5GQTi/7UJqoyUJQKzxW8VN/YBH31+Cy+vTZj4=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
 
   <!-- CSS -->
@@ -104,9 +104,90 @@
   <section class="bg"></section>
   <h1 class="title">Publications</h1>
   <h2 class="bibliography">Journal Articles</h2>
+<h3 class="bibliography">2025</h3>
+<ol class="bibliography"><li><!-- Entry bib key -->
+<div id="RAL_2025_Friction_Estimation">
+  
+  <!-- Title -->
+  <div class="title">Adaptive control based friction estimation for tracking control of robot manipulators
+    <!-- Additional Comments --></div>  
+  <!-- Author -->
+  <div class="author">Junning Huang,&nbsp;Davide Tateo,&nbsp;
+            <em>Puze Liu</em>,&nbsp;and Jan Peters
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+  <div class="third-line">
+    IEEE Robotics and Automation Letters, vol. 10, pp. 2454-2461, 2025
+  </div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      [<a href="https://arxiv.org/pdf/2409.05054" class="btn btn-sm z-depth-0" role="button">PDF</a>]
+      [<a href="http://doi.org/10.1109/LRA.2025.3530159" class="btn btn-sm z-depth-0" role="button">DOI</a>]
+  </div>
+
+  
+</div></li>
+<li><!-- Entry bib key -->
+<div id="TRO_ATACOM">
+  
+  <!-- Title -->
+  <div class="title">Safe Reinforcement Learning on the Constraint Manifold: Theory and Applications
+    <!-- Additional Comments --></div>  
+  <!-- Author -->
+  <div class="author">
+            <em>Puze Liu</em>,&nbsp;Bou-Ammar Haitham,&nbsp;Jan Peters,&nbsp;and Tateo Davide
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+  <div class="third-line">
+    IEEE Transactions on Robotics (T-RO), vol. , pp. 3442-3461, 2025
+  </div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      [<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>]
+      [<a href="http://arxiv.org/abs/2404.09080" class="btn btn-sm z-depth-0" role="button">arXiv</a>]
+      [<a href="https://www.ias.informatik.tu-darmstadt.de/uploads/Team/PuzeLiu/TRO_ATACOM_submitted.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>]
+      [<a href="https://puzeliu.github.io/TRO-ATACOM" class="btn btn-sm z-depth-0" role="button">URL</a>]
+      [<a href="http://doi.org/10.1109/TRO.2025.3567477" class="btn btn-sm z-depth-0" role="button">DOI</a>]
+  </div>
+
+  <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Integrating learning-based techniques, especially reinforcement learning, into robotics is promising for solving complex problems in unstructured environments. However, most existing approaches are trained in well-tuned simulators and subsequently deployed on real robots without online fine-tuning. In this setting, the simulation’s realism seriously impacts the deployment’s success rate. Instead, learning with real-world interaction data offers a promising alternative: not only eliminates the need for a fine-tuned simulator but also applies to a broader range of tasks where accurate modeling is unfeasible. One major problem for on-robot reinforcement learning is ensuring safety, as uncontrolled exploration can cause catastrophic damage to the robot or the environment. Indeed, safety specifications, often represented as constraints, can be complex and non-linear, making safety challenging to guarantee in learning systems. In this paper, we show how we can impose complex safety constraints on learning-based robotics systems in a principled manner, both from theoretical and practical points of view. Our approach is based on the concept of the Constraint Manifold, representing the set of safe robot configurations. Exploiting differential geometry techniques, i.e., the tangent space, we can construct a safe action space, allowing learning agents to sample arbitrary actions while ensuring safety. We demonstrate the method’s effectiveness in a real-world Robot Air Hockey task, showing that our method can handle high-dimensional tasks with complex constraints. Videos of the real robot experiments are available on the project website.</p>
+    </div>
+</div></li>
+<li><!-- Entry bib key -->
+<div id="TASE_2025_ROSCOM">
+  
+  <!-- Title -->
+  <div class="title">ROSCOM: Robust Safe Reinforcement Learning on Stochastic Constraint Manifolds
+    <!-- Additional Comments --></div>  
+  <!-- Author -->
+  <div class="author">Shangding Gu,&nbsp;
+            <em>Puze Liu</em>,&nbsp;Alap Kshirsagar,&nbsp;Guang Chen,&nbsp;Jan Peters,&nbsp;and Alois Knoll
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+  <div class="third-line">
+    IEEE Transactions on Automation Science and Engineering, vol. 22, pp. 5841-5851, 2025
+  </div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      [<a href="http://doi.org/10.1109/TASE.2024.3431530" class="btn btn-sm z-depth-0" role="button">DOI</a>]
+  </div>
+
+  
+</div></li></ol>
 <h3 class="bibliography">2024</h3>
 <ol class="bibliography"><li><!-- Entry bib key -->
-<div id="10292912">
+<div id="TRO_2024_Fast_Kinodynamic_Planning">
   
   <!-- Title -->
   <div class="title">Fast Kinodynamic Planning on the Constraint Manifold With Deep Neural Networks
@@ -133,40 +214,10 @@
     <div class="abstract hidden">
       <p>Motion planning is a mature area of research in robotics with many well-established methods based on optimization or sampling the state space, suitable for solving kinematic motion planning. However, when dynamic motions under constraints are needed and computation time is limited, fast kinodynamic planning on the constraint manifold is indispensable. In recent years, learning-based solutions have become alternatives to classical approaches, but they still lack comprehensive handling of complex constraints, such as planning on a lower dimensional manifold of the task space while considering the robot’s dynamics. This article introduces a novel learning-to-plan framework that exploits the concept of constraint manifold, including dynamics, and neural planning methods. Our approach generates plans satisfying an arbitrary set of constraints and computes them in a short constant time, namely the inference time of a neural network. This allows the robot to plan and replan reactively, making our approach suitable for dynamic environments. We validate our approach on two simulated tasks and in a demanding real-world scenario, where we use a Kuka LBR Iiwa 14 robotic arm to perform the hitting movement in robotic air hockey.</p>
     </div>
-</div></li>
-<li><!-- Entry bib key -->
-<div id="safe reinforcement learning, constraint manifold, safe exploration">
-  
-  <!-- Title -->
-  <div class="title">Safe Reinforcement Learning on the Constraint Manifold: Theory and Applications
-    <!-- Additional Comments --></div>  
-  <!-- Author -->
-  <div class="author">
-            <em>P. Liu</em>,&nbsp;Bou-Ammar H.,&nbsp;J. Peters,&nbsp;and Tateo D.
-  </div>
-
-  <!-- Journal/Book title and date -->
-  
-  <div class="third-line">
-    Submitted to the IEEE Transactions on Robotics (T-RO), 2024
-  </div>
-
-  <!-- Links/Buttons -->
-  <div class="links">
-      [<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>]
-      [<a href="http://arxiv.org/abs/2404.09080" class="btn btn-sm z-depth-0" role="button">arXiv</a>]
-      [<a href="https://www.ias.informatik.tu-darmstadt.de/uploads/Team/PuzeLiu/TRO_ATACOM_submitted.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>]
-      [<a href="https://puzeliu.github.io/TRO-ATACOM" class="btn btn-sm z-depth-0" role="button">URL</a>]
-  </div>
-
-  <!-- Hidden abstract block -->
-    <div class="abstract hidden">
-      <p>Integrating learning-based techniques, especially reinforcement learning, into robotics is promising for solving complex problems in unstructured environments. However, most existing approaches are trained in well-tuned simulators and subsequently deployed on real robots without online fine-tuning. In this setting, the simulation’s realism seriously impacts the deployment’s success rate. Instead, learning with real-world interaction data offers a promising alternative: not only eliminates the need for a fine-tuned simulator but also applies to a broader range of tasks where accurate modeling is unfeasible. One major problem for on-robot reinforcement learning is ensuring safety, as uncontrolled exploration can cause catastrophic damage to the robot or the environment. Indeed, safety specifications, often represented as constraints, can be complex and non-linear, making safety challenging to guarantee in learning systems. In this paper, we show how we can impose complex safety constraints on learning-based robotics systems in a principled manner, both from theoretical and practical points of view. Our approach is based on the concept of the Constraint Manifold, representing the set of safe robot configurations. Exploiting differential geometry techniques, i.e., the tangent space, we can construct a safe action space, allowing learning agents to sample arbitrary actions while ensuring safety. We demonstrate the method’s effectiveness in a real-world Robot Air Hockey task, showing that our method can handle high-dimensional tasks with complex constraints. Videos of the real robot experiments are available on the project website.</p>
-    </div>
 </div></li></ol>
 <h3 class="bibliography">2023</h3>
 <ol class="bibliography"><li><!-- Entry bib key -->
-<div id="doi:10.1177/02783649231179499">
+<div id="IJRR_2023_CEP">
   
   <!-- Title -->
   <div class="title">Composable energy policies for reactive motion generation and reinforcement learning
@@ -196,9 +247,160 @@
     </div>
 </div></li></ol>
 <h2 class="bibliography">Conference Papers</h2>
+<h3 class="bibliography">2025</h3>
+<ol class="bibliography"><li><!-- Entry bib key -->
+<div id="GRC_25_SafeFoundationModels">
+  
+  <!-- Title -->
+  <div class="title">Towards Safe Robot Foundation Models Using Inductive Biases
+    <!-- Additional Comments --></div>  
+  <!-- Author -->
+  <div class="author">Maximilian Tölle,&nbsp;Theo Gruner,&nbsp;Daniel Palenicek,&nbsp;Tim Schneider,&nbsp;Jonas Günster,&nbsp;Joe Watson,&nbsp;Davide Tateo,&nbsp;
+            <em>Puze Liu</em>,&nbsp;and Jan Peters
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+  <div class="third-line">
+    In German Robotics Conference (GRC), 2025
+  </div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      [<a href="https://arxiv.org/pdf/2505.10219" class="btn btn-sm z-depth-0" role="button">PDF</a>]
+  </div>
+
+  
+</div></li>
+<li><!-- Entry bib key -->
+<div id="IMCL_2025_MTCRL">
+  
+  <!-- Title -->
+  <div class="title">Maximum Total Correlation Reinforcement Learning
+    <!-- Additional Comments --></div>  
+  <!-- Author -->
+  <div class="author">Bang You,&nbsp;
+            <em>Puze Liu</em>,&nbsp;Huaping Liu,&nbsp;Jan Peters,&nbsp;and Oleg Arenz
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+  <div class="third-line">
+    In Forty-second International Conference on Machine Learning, 2025
+  </div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      [<a href="https://openreview.net/pdf?id=8mScy0IDRl" class="btn btn-sm z-depth-0" role="button">PDF</a>]
+  </div>
+
+  
+</div></li>
+<li><!-- Entry bib key -->
+<div id="CoRL_2025_SYMDEX">
+  
+  <!-- Title -->
+  <div class="title">Morphologically Symmetric Reinforcement Learning for Ambidextrous Bimanual Manipulation
+    <!-- Additional Comments --></div>  
+  <!-- Author -->
+  <div class="author">Zechu Li,&nbsp;Yufeng Jin,&nbsp;Daniel Ordonez Apraez,&nbsp;Claudio Semini,&nbsp;
+            <em>Puze Liu*</em>,&nbsp;and Georgia Chalvatzaki
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+  <div class="third-line">
+    In Conference on Robot Learning (CoRL), pp. arXiv–2505, 2025
+  </div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      [<a href="https://arxiv.org/pdf/2505.05287" class="btn btn-sm z-depth-0" role="button">PDF</a>]
+  </div>
+
+  
+</div></li>
+<li><!-- Entry bib key -->
+<div id="RSS_2025_AirHockey">
+  
+  <!-- Title -->
+  <div class="title">Distilling Contact Planning for Fast Trajectory Optimization in Robot Air Hockey
+    <!-- Additional Comments --></div>  
+  <!-- Author -->
+  <div class="author">Julius Jankowski,&nbsp;Ante Marić,&nbsp;
+            <em>Puze Liu</em>,&nbsp;Davide Tateo,&nbsp;Jan Peters,&nbsp;and Sylvain Calinon
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+  <div class="third-line">
+    In Proceedings of Robotics: Science and Systems, Jun, 2025
+  </div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      [<a href="https://www.roboticsproceedings.org/rss21/p115.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>]
+      [<a href="http://doi.org/10.15607/RSS.2025.XXI.115" class="btn btn-sm z-depth-0" role="button">DOI</a>]
+  </div>
+
+  
+</div></li></ol>
+<h3 class="bibliography">2024</h3>
+<ol class="bibliography"><li><!-- Entry bib key -->
+<div id="CoRL_2024_DATACOM">
+  
+  <!-- Title -->
+  <div class="title">Handling Long-Term Safety and Uncertainty in Safe Reinforcement Learning
+    <!-- Additional Comments --></div>  
+  <!-- Author -->
+  <div class="author">Jonas Günster,&nbsp;
+            <em>Puze Liu*</em>,&nbsp;Jan Peters,&nbsp;and Davide Tateo
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+  <div class="third-line">
+    In 8th Annual Conference on Robot Learning, 2024
+  </div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      [<a href="https://openreview.net/pdf?id=97QXO0uBEO" class="btn btn-sm z-depth-0" role="button">PDF</a>]
+  </div>
+
+  
+</div></li>
+<li><!-- Entry bib key -->
+<div id="NeurIPS_2024_Challenge">
+  
+  <!-- Title -->
+  <div class="title">A retrospective on the Robot Air Hockey Challenge: benchmarking robust, reliable, and safe learning techniques for real-world robotics
+    <!-- Additional Comments --></div>  
+  <!-- Author -->
+  <div class="author">
+            <em>Puze Liu</em>,&nbsp;Jonas Günster,&nbsp;Niklas Funk,&nbsp;Simon Gröger,&nbsp;Dong Chen,&nbsp;Haitham Bou-Ammar,&nbsp;Julius Jankowski,&nbsp;Ante Marić,&nbsp;Sylvain Calinon,&nbsp;Andrej Orsula,&nbsp;Miguel Olivares-Mendez,&nbsp;Hongyi Zhou,&nbsp;Rudolf Lioutikov,&nbsp;Gerhard Neumann,&nbsp;Amarildo Likmeta,&nbsp;Amirhossein Zhalehmehrabi,&nbsp;Thomas Bonenfant,&nbsp;Marcello Restelli,&nbsp;Davide Tateo,&nbsp;Ziyuan Liu,&nbsp;and Jan Peters
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+  <div class="third-line">
+    In Proceedings of the 38th International Conference on Neural Information Processing Systems, 2024
+  </div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      [<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>]
+      [<a href="https://openreview.net/pdf?id=gPLE4siNjO" class="btn btn-sm z-depth-0" role="button">PDF</a>]
+  </div>
+
+  <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Machine learning methods have a groundbreaking impact in many application domains, but their application on real robotic platforms is still limited. Despite the many challenges associated with combining machine learning technology with robotics, robot learning remains one of the most promising directions for enhancing the capabilities of robots. When deploying learning-based approaches on real robots, extra effort is required to address the challenges posed by various real-world factors. To investigate the key factors influencing real-world deployment and to encourage original solutions from different researchers, we organized the Robot Air Hockey Challenge at the NeurIPS 2023 conference. We selected the air hockey task as a benchmark, encompassing low-level robotics problems and high-level tactics. Different from other machine learning-centric benchmarks, participants need to tackle practical challenges in robotics, such as the sim-to-real gap, low-level control issues, safety problems, real-time requirements, and the limited availability of real-world data. Furthermore, we focus on a dynamic environment, removing the typical assumption of quasi-static motions of other real-world benchmarks. The competition’s results show that solutions combining learning-based approaches with prior knowledge outperform those relying solely on data when real-world deployment is challenging. Our ablation study reveals which real-world factors may be overlooked when building a learning-based solution. The successful real-world air hockey deployment of best-performing agents sets the foundation for future competitions and follow-up research directions.</p>
+    </div>
+</div></li></ol>
 <h3 class="bibliography">2023</h3>
 <ol class="bibliography"><li><!-- Entry bib key -->
-<div id="ICRA_2022_Redsdf_Atacom">
+<div id="ICRA_2022_ReDSDF_ATACOM">
   
   <!-- Title -->
   <div class="title">Safe Reinforcement Learning of Dynamic High-Dimensional Robotic Tasks: Navigation, Manipulation, Interaction
@@ -235,7 +437,7 @@
                  in manipulation and human-robot interaction tasks.</p>
     </div><!-- Hidden bibtex block -->
     <div class="bibtex hidden">
-      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">ICRA_2022_Redsdf_Atacom</span><span class="p">,</span>
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">ICRA_2022_ReDSDF_ATACOM</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Safe Reinforcement Learning of Dynamic High-Dimensional Robotic Tasks: Navigation, Manipulation, Interaction}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Puze and Zhang, Kuo and Tateo, Davide and Jauhri, Snehal and Hu, Zhiyuan and Peters, Jan and Chalvatzaki, Georgia}</span><span class="p">,</span>
   <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)}</span><span class="p">,</span>
@@ -285,7 +487,7 @@
     </div>
 </div></li>
 <li><!-- Entry bib key -->
-<div id="CORL_2021_Learning_on_the_Manifold">
+<div id="CORL_2021_ATACOM">
   
   <!-- Title -->
   <div class="title">Robot Reinforcement Learning on the Constraint Manifold
@@ -318,7 +520,7 @@
       <p>Reinforcement learning in robotics is extremely challenging due to many practical issues, including safety, mechanical constraints, and wear and tear. Typically, these issues are not considered in the machine learning literature. One crucial problem in applying reinforcement learning in the real world is Safe Exploration, which requires physical and safety constraints satisfaction throughout the learning process.  To explore in such a safety-critical environment, leveraging known information such as robot models and constraints is beneficial to provide more robust safety guarantees. Exploiting this knowledge, we propose a novel method to learn robotics tasks in simulation efficiently while satisfying the constraints during the learning process.</p>
     </div><!-- Hidden bibtex block -->
     <div class="bibtex hidden">
-      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">CORL_2021_Learning_on_the_Manifold</span><span class="p">,</span>
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">CORL_2021_ATACOM</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Robot Reinforcement Learning on the Constraint Manifold}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Puze and Tateo, Davide and Bou-Ammar, Haitham and Peters, Jan}</span><span class="p">,</span>
   <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 5th Conference on Robot Learning (CoRL)}</span><span class="p">,</span>
@@ -340,7 +542,7 @@
     <!-- Additional Comments --></div>  
   <!-- Author -->
   <div class="author">Marius Memmel,&nbsp;
-            <em>Puze Liu</em>,&nbsp;Davide Tateo,&nbsp;and Jan Peters
+            <em>Puze Liu*</em>,&nbsp;Davide Tateo,&nbsp;and Jan Peters
   </div>
 
   <!-- Journal/Book title and date -->
@@ -373,6 +575,7 @@
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{151}</span><span class="p">,</span>
   <span class="na">series</span> <span class="p">=</span> <span class="s">{Proceedings of Machine Learning Research}</span><span class="p">,</span>
   <span class="na">publisher</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{correspondence}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
     </div>
 </div></li></ol>
@@ -497,7 +700,7 @@
 <!-- Footer -->
 <footer>
   <div class="footer">
-    Copyright © 2022
+    Copyright © 2025
     <a href="">Puze Liu</a>.
     Powered by Jekyll.
   </div>
